@@ -94,7 +94,7 @@ After the user inputs the ingredients to the program, the main function driver c
 ### 2. Convert the text to features / train and prepare classifiers
 After getting the dataframe from the previous section, the program uses sklearn's train_test_split function to split the dataframe into separate testing and training sets since the size of the data is so large. Data was split into 25% train and 75% test, as proportions for splitting are recommended to be around 20/80 to 30/70 to prevent over/underfitting the data.
 
-After splitting the data, the resulting train and test ingredients and labels were input to the get_model function. The get_model function first vectorizes the ingredients data from the training set using sklearn's CountVectorizer so that the text data is converted into features to create a prediction model. Ultimately, support vector machines were used to create the cuisine classification model, as they usually have higher accuracy scores (at least according to the classification model results in ***Test Analytics with Python***, pg. 317). Although, SVMs are usually slower, so the part of the code where the accuracy and test accuracy scores were calculated are commented out. It was found that after testing the model on the test df that it had an accuracy of 73%, which is relatively high. The get_model function returns the countVectorizer and svm model to the main code.
+After splitting the data, the resulting train and test ingredients and labels were input to the get_model function. The get_model function first vectorizes the ingredients data from the training set using sklearn's CountVectorizer so that the text data is converted into features to create a prediction model. Ultimately, support vector machines were used to create the cuisine classification model, as they usually have higher accuracy scores (at least according to the classification model results in ***Text Analytics with Python***, pg. 317). Although, SVMs are usually slower, so the part of the code where the accuracy and test accuracy scores were calculated are commented out. It was found that after testing the model on the test df that it had an accuracy of 73%, which is relatively high. The get_model function returns the countVectorizer and svm model to the main code.
 
 ### 3. Prediction
 The main code directly takes the countVectorizer, svm model, and user input ingredients into the predict function. There, it uses the countVectorizer to vectorize/featurize the input ingredients so that the svm model can predict the cuisine for them. The ingredients and predicted cuisine are stored in a single dataframe row with an Id of 'User_input.' Reasons for this will be explained in the next section. The function then prints and returns the predicted cuisine and the row of data.
@@ -114,5 +114,5 @@ Command to run pytest:
 
 #### References
 ------
-***Test Analytics with Python***, Second Edition, by Dipanjan Sarkar
+***Text Analytics with Python***, Second Edition, by Dipanjan Sarkar
 https://machinelearningmastery.com/make-predictions-scikit-learn/
