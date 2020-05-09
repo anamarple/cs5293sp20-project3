@@ -1,0 +1,9 @@
+
+Input Ingredients: ['tortillas', 'tacos', 'rice', 'guacamole']
+Predicted Cuisine: mexican
+Closest 5 recipes: 
+1. Recipe Id: 4734 (0.35355339059327373) 
+2. Recipe Id: 31646 (0.3333333333333333) 
+3. Recipe Id: 44498 (0.31622776601683794) 
+4. Recipe Id: 26065 (0.2886751345948129) 
+5. Recipe Id: 14031 (0.2886751345948129) 

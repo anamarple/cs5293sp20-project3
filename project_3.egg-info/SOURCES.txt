@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+project3/__init__.py
+project3/predictor.py
+project_3.egg-info/PKG-INFO
+project_3.egg-info/SOURCES.txt
+project_3.egg-info/dependency_links.txt
+project_3.egg-info/top_level.txt
