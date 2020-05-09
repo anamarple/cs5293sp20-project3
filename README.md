@@ -115,4 +115,5 @@ Command to run pytest:
 #### References
 ------
 ***Text Analytics with Python***, Second Edition, by Dipanjan Sarkar
+
 https://machinelearningmastery.com/make-predictions-scikit-learn/
