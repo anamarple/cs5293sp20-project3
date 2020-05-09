@@ -88,7 +88,7 @@ Closest 5 recipes:
 ## Code Flow
 -------------------
 
-### 1. Get input / Parse dataset:
+### 1. Get input / Parse dataset
 After the user inputs the ingredients to the program, the main function driver code stores the ingredients. It first calls the parse_data function to parse the yummly.json data file. The parse_data function takes in the name of the file to be parsed and loads the contents of the file using the json package. Each json object is then parsed and its respective id, cuisine, and ingredients are added to lists that are then used to create a pandas dataframe that is returned to the main code.
 
 ### 2. Convert the text to features / train and prepare classifiers
